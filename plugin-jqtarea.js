@@ -2,8 +2,8 @@
  * jQuery Text Area Limit
  * https://iamjoberror.com/projects/jQTarea
  * info@iamjoberror.com
- * Version: 2.1.1
- * Copyright 2018 Bolarinwa Olakunle (Joberror)
+ * Version: 1.2.0
+ * Copyright 2019 Bolarinwa Olakunle
  */
 (function ($) {
     $.fn.jQTArea = function (options) {
