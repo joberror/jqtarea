@@ -1,6 +1,6 @@
 /*
  * jQuery Text Area Limit
- * https://iamjoberror.com
+ * https://iamjoberror.com/projects/jQTarea
  * info@iamjoberror.com
  * Version: 2.1.1
  * Copyright 2018 Bolarinwa Olakunle (Joberror)
