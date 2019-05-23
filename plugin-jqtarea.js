@@ -1,6 +1,7 @@
 /*
- * jQuery textarea limit plugin
- * http://joberror.me
+ * jQuery Text Area Limit
+ * https://iamjoberror.com
+ * info@iamjoberror.com
  * Version: 2.1.1
  * Copyright 2018 Bolarinwa Olakunle (Joberror)
  */
