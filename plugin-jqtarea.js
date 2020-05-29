@@ -12,18 +12,24 @@
                 {
                     setLimit: 200, // Input limit
                     setExt: "W", // Animate Width (W) or Height (H) based on input length
-                    setExtR: false // calculate setExt in reverse
+                    setExtR: false, // calculate setExt in reverse
+                    value: $(".jQTAreaValue"),
+                    count: $(".jQTAreaCount"),
+                    countR: $(".jQTAreaCountR")
                 },
             plugin = $.extend({}, defaults, options);
 
         this.each(function () {
             var
                 // get textarea element
-                getTextarea = $(this);
+                getTextarea = $(this),
+                $value = plugin.value,
+                $count = plugin.count,
+                $countR = plugin.countR;
 
             //set default values
-            $(".jQTAreaValue").html(plugin.setLimit);
-            $(".jQTAreaCount").html(0);
+            $value.html(plugin.setLimit);
+            $count.html(0);
 
             // bind events to textarea
             if (getTextarea.is('textarea')) {
@@ -50,10 +56,10 @@
 
                 } else {
                     // set .jQTALimitCount to display input length
-                    $(".jQTAreaCount").html(inputLength);
+                    $count.html(inputLength);
 
                     // set .jQTALimitCountR to display input length remaining
-                    $(".jQTAreaCountR").html(limit - inputLength);
+                    $countR.html(limit - inputLength);
 
                     // set .jQTALimitExt to animate either width or height of element based on input length
                     calPerc = inputLength * 100 / limit;
